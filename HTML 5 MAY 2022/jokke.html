@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body>
+
+<h2 class="Myself">My First Page shows</h2>
+<div style="display:none; background-color: green;" > 
+<ul>
+    <li>sheet 1</li>
+    <li>sheet 2</li>
+    <li>sheet 3</li>
+    <li>sheet 4</li>
+</ul>
+</div>
+
+<script>
+    let button = document.querySelector(".Myself");
+    let div = document.querySelector("div");
+    button.addEventListener("click", Myfunction);
+    function Myfunction(){
+        if(div.style.display == "none"){
+            div.style.display = "Block"
+        }else {
+            div.style.display = "none";
+        }
+    }
+  
+</script>
+
+</body>
+</html>
